@@ -78,7 +78,7 @@ def match(timeseries, memory=2, *,
 
             # the negative weighted jaccard indices to use for matching
             match_costs = np.zeros((len(base_communities), 
-                                    len(communities)), dtype=np.float)
+                                    len(communities)), dtype=float)
         
 
             for k, (b_name, A) in enumerate(base_communities.items()):
